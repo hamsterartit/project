@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  // overflow: hidden;
+
+  background-color: $bg-light-color;
+
+  color: $text-primary-color;
+  font-family: 'Raleway', sans-serif;
+  font-size: rem(18);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: rem(20);
+  padding-left: rem(20);
+
+  @include md-block {
+    padding-right: rem(40);
+    padding-left: rem(40);
+  }
+
+  &--sm {
+    max-width: $container-width-sm;
+  }
+
+  &--md {
+    max-width: $container-width-md;
+  }
+
+  &--lg {
+    max-width: $container-width-lg;
+  }
+}

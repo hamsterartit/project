@@ -1,0 +1,11 @@
+.navigation__list {
+  display: flex;
+  column-gap: rem(40);
+  list-style-type: none;
+}
+
+.navigation__link {
+  color: $text-primary-color;
+  font-weight: 500;
+  text-decoration: none;
+}

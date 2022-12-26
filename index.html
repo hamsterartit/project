@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <link rel="stylesheet" href="scss/styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marmelad&family=Raleway:wght@300;400;500;600&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container container--lg">
+        <a class="header__logo" href="">
+          <img class="" src="images/logo.svg" alt="" />
+        </a>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li>
+              <a class="navigation__link" href="">Магазины</a>
+            </li>
+            <li>
+              <a class="navigation__link" href="">Контакты</a>
+            </li>
+            <li>
+              <a class="navigation__link" href="">О нас</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__phone-link" href="">+3 67 8754 7894</a>
+        <div class="header__lang lang-toggle">
+          <button class="lang-toggle__btn lang-toggle__btn--active" type="button">Ru</button>
+          <button class="lang-toggle__btn" type="button">Eng</button>
+        </div>
+        <a class="header__login btn btn--small" href="">Войти</a>
+        <a class="header__registration btn btn--outlined btn--small" href="">Создать аккаунт</a>
+        <button class="header__burger burger-btn" type="button">
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <picture>
+          <source
+            srcset="images/intro-bg-mobile.webp 1x, images/intro-bg-mobile_2x.webp 2x"
+            type="image/webp"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="images/intro-bg-tablet.webp 1x, images/intro-bg-tablet_2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 768px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/intro-bg.webp 1x, images/intro-bg_2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="images/intro-bg-mobile.png 1x, images/intro-bg-mobile_2x.png 2x"
+            type="image/png"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="images/intro-bg-tablet.png 1x, images/intro-bg-tablet_2x.png 2x"
+            type="image/png"
+            media="(min-width: 768px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/intro-bg.png 1x, images/intro-bg_2x.png 2x"
+            type="image/png"
+            media="(min-width: 1200px)"
+          />
+          <img class="intro__bg" src="images/intro-bg.png" alt="" loading="lazy" />
+        </picture>
+        <div class="intro__container container container--sm">
+          <h1 class="intro__title">
+            Мы будем рады сотрудничать с вами на платформе 'Международной цветочной онлайн-площадки'!
+          </h1>
+          <p class="intro__text">
+            Присоединяйтесь к нам и начните получать доход с бизнеса в первый месяц регистрации!
+          </p>
+          <div class="intro__actions">
+            <a class="btn btn--large btn--primary" href="">Начать покупать</a>
+            <a class="btn btn--large btn--secondary" href="">Начать продавать</a>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <picture>
+          <source
+            srcset="images/form-bg-mobile.webp 1x, images/form-bg-mobile_2x.webp 2x"
+            type="image/webp"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="images/form-bg-tablet.webp 1x, images/form-bg-tablet_2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 768px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/form-bg.webp 1x, images/form-bg_2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="images/form-bg-mobile.jpg 1x, images/form-bg-mobile_2x.jpg 2x"
+            type="image/jpg"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="images/form-bg-tablet.jpg 1x, images/form-bg-tablet_2x.jpg 2x"
+            type="image/jpg"
+            media="(min-width: 768px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/form-bg.jpg 1x, images/form-bg_2x.jpg 2x"
+            type="image/jpg"
+            media="(min-width: 1200px)"
+          />
+          <img class="form-section__bg" src="images/form-bg.jpg" alt="" loading="lazy" />
+        </picture>
+        <div class="container container--md">
+          <div class="form-section__container">
+            <div class="form-section__info">
+              <h2 class="form-section__title">Заполните форму и начните развивать свой бизнес прямо сейчас!</h2>
+              <p class="form-section__text">
+                Регистрация на нашем сайте занимает несколько минут, просим ответить на все вопросы полностью и
+                корректно! После подтверждения регистрации вы попадёте в систему, где большинство процессов
+                автоматизированы, что сэкономит ваше время и деньги!
+              </p>
+            </div>
+            <form class="form-section__form form-box">
+              <div class="form-box__step" data-form-step-1>
+                <div class="form-box__field field">
+                  <label class="field__lbl" for="name">Ваше имя</label>
+                  <input
+                    class="field__input"
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Фролова Александра Васильевна"
+                  />
+                </div>
+                <div class="form-box__field field">
+                  <label class="field__lbl" for="company">Название Компании</label>
+                  <input class="field__input" id="company" name="company" type="text" placeholder="ООО Атлантика" />
+                </div>
+                <div class="form-box__field field">
+                  <label class="field__lbl" for="email">E-mail</label>
+                  <input class="field__input" id="email" name="email" type="email" placeholder="flolovaalexa@com.rur" />
+                </div>
+                <div class="form-box__field field">
+                  <label class="field__lbl" for="phone">Номер телефона</label>
+                  <input class="field__input" id="phone" name="phone" type="text" placeholder="+7 (XXX) - XXX XX XX" />
+                </div>
+                <div class="form-box__field field">
+                  <label class="field__lbl" for="promo">Промокод</label>
+                  <input class="field__input" id="promo" name="promo" type="text" placeholder="HGF864" />
+                </div>
+                <div class="form-box__submit">
+                  <button class="form-box__btn btn btn--small btn--primary" data-next-btn type="button">Далее</button>
+                </div>
+              </div>
+              <div class="form-box__step" data-form-step-2 hidden>
+                <div class="form-box__field form-box__field--order-0 field">
+                  <label class="field__lbl" for="password">Пароль</label>
+                  <input
+                    class="field__input"
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Создайте пароль"
+                  />
+                </div>
+                <div class="form-box__field form-box__field--order-0 field">
+                  <label class="field__lbl" for="confirm-password">Подтвердите пароль</label>
+                  <input
+                    class="field__input"
+                    id="confirm-password"
+                    name="confirm-password"
+                    type="password"
+                    placeholder="Повторите пароль"
+                  />
+                </div>
+                <div class="form-box__field field form-box__field--order-2">
+                  <label class="field__lbl" for="captcha">Введите символы из картинки</label>
+                  <input class="field__input" id="captcha" name="captcha" type="text" placeholder="Код из картинки" />
+                </div>
+                <div class="form-box__field form-box__field--order-1">
+                  <img class="" src="images/captcha.svg" alt="" width="320" height="94" />
+                </div>
+                <div class="form-box__submit form-box__field--order-3">
+                  <button class="form-box__btn btn btn--small btn--secondary" data-prev-btn type="button">Назад</button>
+                  <button class="form-box__btn btn btn--small btn--primary" type="submit">Подтвердить</button>
+                </div>
+                <div class="form-box__field form-box__field--order-3">
+                  <label class="checkbox" for="politics-check">
+                    <input class="visually-hidden" id="politics-check" type="checkbox" checked="checked" />
+                    <span class="checkbox__input"></span>
+                    <span class="checkbox__lbl"
+                      >Я даю согласие на обработку моих персональных данных и правовых документов</span
+                    >
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container container--lg">
+        <div class="footer__col">
+          <h3 class="footer__title">Наши офисы</h3>
+          <div class="footer__info">
+            <p>Московский офис</p>
+            <a href="tel:+74552678907">+7 455 267-89-07</a>
+            <p>
+              Берсеневский пер., д. 56, стр. 4, <br />
+              6-й эт., Москва, 567754
+            </p>
+          </div>
+          <div class="footer__info">
+            <p>Ростовский офис</p>
+            <a href="tel:+78788880167">+7 878 888-01-67</a>
+            <p>
+              Буденовский пр-т, д. 84, 6-й эт., <br />
+              Ростов-на-Дону, 679965
+            </p>
+          </div>
+        </div>
+        <div class="footer__col footer__col--order-1">
+          <h3 class="footer__title">Мы в соц сетях</h3>
+          <a class="footer__social-link" href="">Instagram</a>
+          <a class="footer__social-link" href="">Facebook</a>
+        </div>
+        <div class="footer__col footer__col--order-0">
+          <h3 class="footer__title">Свяжитесь с нами</h3>
+          <a class="footer__phone-link" href="tel:+36787547894">+3 67 8754 7894</a>
+          <a class="footer__social-link" href="mailto:mflowers@flo.com">mflowers@flo.com</a>
+          <button class="btn btn--small btn--primary">
+            Написать
+            <img src="icons/envelope.svg" alt="" width="24" height="24" />
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

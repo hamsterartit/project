@@ -1,0 +1,28 @@
+.field__lbl {
+  display: block;
+  margin-bottom: rem(10);
+
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: rem(16);
+}
+
+.field__input {
+  width: 100%;
+  height: rem(48);
+  padding: rem(16) rem(8);
+
+  border-width: 0;
+  border-radius: rem(6);
+
+  background-color: $input-bg-color;
+
+  color: $input-text-color;
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: rem(16);
+
+  &::placeholder {
+    color: $input-placeholder-color;
+  }
+}

@@ -1,0 +1,63 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: rem(10);
+
+  border: 1px solid transparent;
+  border-radius: rem(12);
+
+  color: $text-primary-color;
+
+  font-size: rem(16);
+  font-weight: 600;
+  line-height: rem(19);
+  text-decoration: none;
+
+  cursor: pointer;
+
+  @include md-block {
+    font-size: rem(18);
+    line-height: rem(21);
+  }
+}
+
+.btn--large {
+  height: rem(43);
+  padding-right: rem(8);
+  padding-left: rem(8);
+
+  @include md-block {
+    height: rem(69);
+    padding-right: rem(32);
+    padding-left: rem(32);
+  }
+}
+
+.btn--small {
+  height: rem(49);
+  padding-right: rem(28);
+  padding-left: rem(28);
+}
+
+.btn--outlined {
+  border-color: $btn-outlined-br-color;
+
+  color: $btn-outlined-text-color;
+}
+
+.btn--primary {
+  border-color: $btn-primary-bg-color;
+
+  background-color: $btn-primary-bg-color;
+
+  color: $btn-primary-text-color;
+}
+
+.btn--secondary {
+  border-color: $btn-secondary-bg-color;
+
+  background-color: $btn-secondary-bg-color;
+
+  color: $btn-secondary-text-color;
+}

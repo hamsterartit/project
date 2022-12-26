@@ -1,0 +1,42 @@
+.burger-btn {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: rem(30);
+
+  height: rem(30);
+  padding: rem(7) rem(5);
+
+  border-width: 0;
+
+  background-color: transparent;
+
+  color: $btn-outlined-text-color;
+
+  @include md-block {
+    width: rem(40);
+    height: rem(40);
+    padding: rem(10) rem(8);
+  }
+}
+
+.burger-btn__line {
+  display: block;
+  height: 2px;
+
+  border-radius: 2px;
+
+  background-color: currentcolor;
+
+  &:first-child {
+    width: 100%;
+  }
+
+  &:nth-child(2) {
+    width: calc(100% - 5px);
+  }
+
+  &:last-child {
+    width: calc(100% - 10px);
+  }
+}

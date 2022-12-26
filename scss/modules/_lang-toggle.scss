@@ -1,0 +1,26 @@
+.lang-toggle {
+  display: flex;
+  padding: rem(8);
+  column-gap: rem(8);
+}
+
+.lang-toggle__btn {
+  padding: 0;
+
+  border-width: 0;
+
+  background-color: transparent;
+
+  color: $text-secondary-color;
+  font-size: rem(16);
+  line-height: rem(19);
+
+  @include md-block {
+    font-size: rem(20);
+    line-height: rem(23);
+  }
+
+  &--active {
+    color: $text-primary-color;
+  }
+}

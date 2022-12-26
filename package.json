@@ -1,0 +1,20 @@
+{
+  "name": "modesto_flowers_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".stylelintrc.js",
+  "scripts": {
+    "stylelint:fix": "npx stylelint --fix \"**/*.scss\"  --custom-syntax postcss-scss",
+    "prettier:fix": "prettier **/*.{scss,js} --write"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.1",
+    "stylelint": "^14.16.0",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
+    "stylelint-order": "^5.0.0"
+  }
+}
